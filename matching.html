@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		let arr = ["what", "weary", "worse", "wrong"];
+
+		var letter = "e";
+		for(let values of arr){
+			let letters = values.split("");
+			for(let each of letters){
+				if(each.match(letter)){
+					console.log(values);
+				}
+			}
+		}
+	</script>
+</body>
+</html>

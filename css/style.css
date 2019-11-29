@@ -1,0 +1,80 @@
+#spinner{
+	display:none;
+}
+
+
+#finder{
+	display:flex;
+	justify-content: center;
+	padding:1%;
+	width: 50%;
+	border-radius: 25px 25px;
+}
+
+#finder div:first-child input {
+	outline:none;
+	border: none;
+	height: 100%;
+	color:black;
+	border-radius: 25px 0px 0px 25px;
+}
+#finder div:nth-child(2) input{
+	color:black;
+}
+#finder div:nth-child(3) select{
+	height: 100%;
+	color:black;
+	border-radius: 0px 25px 25px 0px;
+}
+#finder div:nth-child(3) select:focus{
+	outline: none;
+}
+
+@media all and (max-width: 320px){
+	#finder{
+		box-sizing: border-box;
+		display:flex;
+		flex-direction: row-reverse;
+		flex-wrap: wrap;
+	}
+	#finder div:first-child{
+	width:100%;
+	border-radius:0px;
+	}
+	#finder div:first-child input{
+	color:black;
+	width:100%;
+	border-radius:0px;
+	background:none;
+	font-size: 200%;
+	}
+	#finder div:nth-child(2) input{
+	width:100px;
+	border:none;
+	color:black;
+	border-bottom: 3px solid black;	
+	}
+	#finder div:nth-child(2) input:focus{
+		outline:none;
+	}
+	#finder div:nth-child(3) select{
+	border-radius: 0;
+	width:100px;
+	color:black;
+	}
+	
+
+}
+
+
+/****************************************************************************************************
+WARNING 
+*/
+#warning {
+	display:none;
+}
+
+/*  NO RESULT	*/
+#noResult{
+	display:none;
+}

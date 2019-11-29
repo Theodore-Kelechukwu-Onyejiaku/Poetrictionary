@@ -1,0 +1,6 @@
+button#findWord {
+	cursor:pointer;
+}
+#our-spin{
+	display: none;
+}
